@@ -1,5 +1,34 @@
+body {
+    background-color: black;
+}
+
 .button-nav {
     left: 0;
+}
+
+.navbar-brand img {
+    width: 10rem;
+}
+
+.navbar-toggler-icon img {
+    width: 2rem;
+}
+
+
+.banner {
+    background-image: url('../images/bg-banner.png');
+    height: 60vw;
+}
+
+.line {
+    background-color: white;
+    width: 20rem;
+    height: 2px;
+}
+
+.menu-title h4 {
+    color: #EF5906;
+    font-size: 3rem;
 }
 
 @media screen and (max-width: 991px) {
