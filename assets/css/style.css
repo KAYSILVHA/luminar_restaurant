@@ -18,6 +18,16 @@ body {
 .banner {
     background-image: url('../images/bg-banner.png');
     height: 60vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.banner-drinks {
+    background-image: url('../images/bg-drink.png');
+    height: 60vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .line {
@@ -26,10 +36,20 @@ body {
     height: 2px;
 }
 
-.menu-title h4 {
+h4 {
     color: #EF5906;
     font-size: 3rem;
 }
+
+.maps h5 {
+    color: #EF5906;
+}
+
+.maps a {
+    text-decoration: none;
+    color: white;
+}
+
 
 @media screen and (max-width: 991px) {
     .navbar-toggler-icon {
