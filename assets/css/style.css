@@ -50,10 +50,39 @@ h4 {
     color: white;
 }
 
+.createdBy {
+    color: #EF5906;
+}
+
+.button-reserve {
+    background-color: #EF5906;
+    font-weight: 700;
+    width: 100%;
+    max-width: 200px;
+}
+
+.form-group input{
+    background-color: transparent;
+    border: 1px solid #606060;
+    color: #fff;
+}
+
+.form-group input:focus {
+    background-color: transparent;
+    color: white;
+}
+
+.form-group input::placeholder {
+    color: #fff; 
+}
 
 @media screen and (max-width: 991px) {
     .navbar-toggler-icon {
         position: absolute;
         right: 0;
+    }
+
+    .line {
+        display: none;
     }
 }

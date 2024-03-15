@@ -84,7 +84,7 @@
                 </div>
             </section>
         </section>
-        <section class="container-fluid d-flex flex-column align-items-center my-5">
+        <section class="localization container-fluid d-flex flex-column align-items-center my-5">
             <h2 class="text-white mb-5">Localização</h2>
             <section class="container maps d-flex flex-lg-row flex-column align-items-center justify-content-center">
                 <div class="col-lg-5 col-11 mb-lg-0 mb-5 text-light text-lg-start text-center">
@@ -121,9 +121,51 @@
                 </div>
             </section>
         </section>
+        <section class="container-fluid form mt-5">
+            <section class="container d-flex align-items-center justify-content-around">
+                <div class="col-lg-6 col-12 mt-5 d-flex flex-column align-items-center">
+                    <h2 class="text-white text-center">Faça sua reserva</h2>
+                    <form class="text-light">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome">
+                        </div>
+                        <div class="mt-4 form-row d-flex flex-lg-row flex-column justify-content-between">
+                            <div class="form-group col-lg-5 col-12">
+                                <input type="tel" class="form-control" id="telefone" placeholder="Telefone">
+                            </div>
+                            <div class="form-group col-lg-5 col-12">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="mt-4 form-row d-flex flex-lg-row flex-column justify-content-between">
+                            <div class="form-group col-lg-4 col-12">
+                                <label for="data">Data</label>
+                                <input type="date" class="form-control text-white" id="data">
+                            </div>
+                            <div class="form-group col-lg-3 col-12">
+                                <label for="horario">Horário</label>
+                                <input type="time" class="form-control text-white" id="horario">
+                            </div>
+                            <div class="form-group col-lg-2 col-12">
+                                <label for="pessoas">Pessoas</label>
+                                <input type="number" class="form-control" id="pessoas" min="1">
+                            </div>
+                        </div>
+                    </form>
+                    <button type="submit" class="mt-5 btn rounded button-reserve text-light">Reservar</button>
+                </div>
+
+                
+
+            </section>
+        </section>
+
+
+
     </main>
     <footer class="container-fluid my-5">
-        <section class="container d-flex flex-lg-row flex-column align-items-center justify-content-center text-lg-start text-center">
+        <section
+            class="container d-flex flex-lg-row flex-column align-items-center justify-content-center text-lg-start text-center">
             <div class="col-lg-3 col-12"><img src="./assets/images/logo.png" alt="Logo Luminar"></div>
             <div class="col-lg-2 col-12 text-white">
                 <p>FAQS</p>
@@ -148,6 +190,10 @@
                     <img src="./assets/images/Insta-light.png" alt="Instagram Logo">
                 </div>
             </div>
+        </section>
+        <section class="container d-flex flex-column mt-5 text-white">
+            <p class="text-center">&copy; Luminar 2024 - All rights reserveds</p>
+            <p class="createdBy text-center">By KayraSilvha</p>
         </section>
     </footer>
 
