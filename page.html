@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUMINAR RESTAURANTE | Iluminando Paladares com Elegância e Sabor</title>
+
+    <meta name="description"
+        content="Descubra uma experiência gastronômica excepcional no Luminar Restaurant. Desfrute do nosso menu requintado, vinhos finos e um ambiente acolhedor.">
+    <meta name="keywords"
+        content="Luminar Restaurant, alta gastronomia, menu requintado, comida gourmet, melhor restaurante, experiência gastronômica">
+    <meta name="author" content="Luminar Restaurant">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -16,10 +23,9 @@
 <body>
     <header class="container-fluid">
         <nav class="navbar">
-            <div class="container position-relative d-flex justify-content-center align-items-center">
-                <button class="navbar-toggler border-0 position-absolute button-nav" type="button"
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                    aria-label="Toggle navigation">
+            <div class="container position-relative d-flex justify-content-lg-center align-items-center">
+                <button class="navbar-toggler border-0 button-nav" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><img src="./assets/images/menu.png" alt="Menu"></span>
                 </button>
 
@@ -73,63 +79,91 @@
                     <h4>Menu</h4>
                     <div class="line"></div>
                 </div>
+                <div class="carousel-container">
+                    <button id="prevBtn">Anterior</button>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="./assets/images/plate-one.png" alt="Image 1">
+                            <img src="./assets/images/plate-two.png" alt="Image 2">
+                            <img src="./assets/images/plate-three.png" alt="Image 3">
+                            <img src="./assets/images/plate-four.png" alt="Image 4">
+                            <img src="./assets/images/plate-five.png" alt="Image 5">
+                            
+                            <img src="./assets/images/plate-one.png" alt="Image 1">
+                            <img src="./assets/images/plate-two.png" alt="Image 2">
+                            <img src="./assets/images/plate-three.png" alt="Image 3">
+                            <img src="./assets/images/plate-four.png" alt="Image 4">
+                            <img src="./assets/images/plate-five.png" alt="Image 5">
+                        </div>
+                    </div>
+                    <button id="nextBtn">Próximo</button>
+                </div>
             </section>
         </section>
-        <section class="container-fluid banner-drinks p-0 my-4 py-5">
+
+        <section class="container-fluid banner-drinks p-0 py-5">
             <section class="container d-flex justify-content-around align-items-center flex-column">
                 <div class="drink-title mt-5 d-flex justify-content-around align-items-center w-100">
                     <div class="line"></div>
                     <h4>Bebidas</h4>
                     <div class="line"></div>
                 </div>
-            </section>
-        </section>
-        <section class="localization container-fluid d-flex flex-column align-items-center my-5">
-            <h2 class="text-white mb-5">Localização</h2>
-            <section class="container maps d-flex flex-lg-row flex-column align-items-center justify-content-center">
-                <div class="col-lg-5 col-11 mb-lg-0 mb-5 text-light text-lg-start text-center">
-                    <div class="mb-3">
-                        <h5>Telefones</h5>
-                        <div
-                            class="d-flex align-items-lg-start align-items-center justify-content-lg-start justify-content-center">
-                            <p class="me-5">(11) 1234-5678</p>
-                            <p>(22) 9876-5432</p>
+                <div class="carousel-container">
+                    <button id="prevBtn">Anterior</button>
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="./assets/images/drink-one.png" alt="Image 1">
+                            <img src="./assets/images/drink-two.png" alt="Image 2">
+                            <img src="./assets/images/drink-three.png" alt="Image 3">
+                            <img src="./assets/images/drink-four.png" alt="Image 4">
+
+                            
+                            <img src="./assets/images/drink-one.png" alt="Image 1">
+                            <img src="./assets/images/drink-two.png" alt="Image 2">
+                            <img src="./assets/images/drink-three.png" alt="Image 3">
+                            <img src="./assets/images/drink-four.png" alt="Image 4">
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <h5>Endereço</h5>
-                        <p>Rua dos Aromas, 456, Saborville, Gourmetópolis, 12345-678</p>
-                    </div>
-                    <div class="mb-5">
-                        <h5>Horários</h5>
-                        <p>Aberto de Segunda a sábado, dás 9:00 as 22:00</p>
-                    </div>
-                    <div class="d-flex align-items-center mb-3 justify-content-lg-start justify-content-center">
-                        <img class="me-2" src="./assets/images/face-orange.png" alt="Facebook Logo">
-                        <a href="#">https://www.facebook.com/restaurant.luminar</a>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
-                        <img class="me-2" src="./assets/images/insta-orange.png" alt="Instagran Logo">
-                        <a href="#">@luminar_restaurant</a>
-                    </div>
+                    <button id="nextBtn">Próximo</button>
+            </section>
+        </section>
+
+        <section class="container-fluid galery p-0 py-5">
+            <section class="container d-flex justify-content-around align-items-center flex-column">
+                <div class="my-5 d-flex justify-content-around align-items-center w-100">
+                    <div class="line"></div>
+                    <h4>Galeria</h4>
+                    <div class="line"></div>
                 </div>
-                <div class="col-lg-5 col-11 text-center">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14682.070829839937!2d-52.459681434535455!3d-23.07813687561669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9492967cfac63ab5%3A0xcb4db6ca994f45b3!2zSGFydcOq!5e0!3m2!1spt-BR!2sbr!4v1710367837503!5m2!1spt-BR!2sbr"
-                        width="auto" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="album-grid">
+                    <div class="item"><img src="./assets/images/image-1.jpg" alt="Foto | Galeria Luminar 1"></div>
+                    <div class="item"><img src="./assets/images/image-2.jpg" alt="Foto | Galeria Luminar 2"></div>
+                    <div class="item"><img src="./assets/images/image-3.jpg" alt="Foto | Galeria Luminar 3"></div>
+                    <div class="item"><img src="./assets/images/image-4.jpg" alt="Foto | Galeria Luminar 4"></div>
+                    <div class="item"><img src="./assets/images/image-5.jpg" alt="Foto | Galeria Luminar 5"></div>
+                    <div class="item"><img src="./assets/images/image-6.jpg" alt="Foto | Galeria Luminar 6"></div>
+                    <div class="item"><img src="./assets/images/image-7.jpg" alt="Foto | Galeria Luminar 7"></div>
+                    <div class="item"><img src="./assets/images/image-8.jfif" alt="Foto | Galeria Luminar 8"></div>
+                    <div class="item"><img src="./assets/images/image-9.webp" alt="Foto | Galeria Luminar 9"></div>
+                    <div class="item"><img src="./assets/images/image-10.jpg" alt="Foto | Galeria Luminar 10"></div>
+                    <div class="item"><img src="./assets/images/image-11.png" alt="Foto | Galeria Luminar 11"></div>
+                    <div class="item"><img src="./assets/images/image-12.png" alt="Foto | Galeria Luminar 12"></div>
                 </div>
             </section>
         </section>
+
         <section class="container-fluid form mt-5">
-            <section class="container d-flex align-items-center justify-content-around">
-                <div class="col-lg-6 col-12 mt-5 d-flex flex-column align-items-center">
-                    <h2 class="text-white text-center">Faça sua reserva</h2>
+            <section class="container d-flex flex-lg-row flex-column align-items-center justify-content-around">
+                <div class="img-form">
+                    <img src="./assets/images/form-image.png" alt="Prato dfe Ceviche">
+                </div>
+                <div class="container-form col-lg-6 col-12 mt-5 d-flex flex-column align-items-center">
+                    <h2 class="text-white text-center mb-5">Faça sua reserva</h2>
                     <form class="text-light">
                         <div class="form-group">
                             <input type="text" class="form-control" id="nome" placeholder="Nome">
                         </div>
-                        <div class="mt-4 form-row d-flex flex-lg-row flex-column justify-content-between">
+                        <div class="mt-lg-4 form-row d-flex flex-lg-row flex-column justify-content-between">
                             <div class="form-group col-lg-5 col-12">
                                 <input type="tel" class="form-control" id="telefone" placeholder="Telefone">
                             </div>
@@ -154,35 +188,69 @@
                     </form>
                     <button type="submit" class="mt-5 btn rounded button-reserve text-light">Reservar</button>
                 </div>
+            </section>
+        </section>
 
-                
-
+        <section class="localization container-fluid d-flex flex-column align-items-center">
+            <h2 class="text-white mb-5">Localização</h2>
+            <section class="container maps d-flex flex-lg-row flex-column align-items-center justify-content-center">
+                <div class="col-lg-5 col-11 mb-lg-0 mb-5 text-light text-lg-start text-center">
+                    <div class="mb-3">
+                        <h5>Telefones</h5>
+                        <div
+                            class="d-flex flex-lg-row flex-column align-items-lg-start align-items-center justify-content-lg-start justify-content-center">
+                            <p class="me-lg-5">(11) 1234-5678</p>
+                            <p>(22) 9876-5432</p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h5>Endereço</h5>
+                        <p>Rua dos Aromas, 456, Saborville, Gourmetópolis, 12345-678</p>
+                    </div>
+                    <div class="mb-5">
+                        <h5>Horários</h5>
+                        <p>Aberto de Segunda a sábado, dás 9:00 as 22:00</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-3 justify-content-lg-start justify-content-center">
+                        <img class="me-2" src="./assets/images/face-orange.png" alt="Facebook Logo">
+                        <a class="p" href="#">https://www.facebook.com/restaurant.luminar</a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
+                        <img class="me-2" src="./assets/images/insta-orange.png" alt="Instagran Logo">
+                        <a href="#">@luminar_restaurant</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-11 text-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14682.070829839937!2d-52.459681434535455!3d-23.07813687561669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9492967cfac63ab5%3A0xcb4db6ca994f45b3!2zSGFydcOq!5e0!3m2!1spt-BR!2sbr!4v1710367837503!5m2!1spt-BR!2sbr"
+                        width="auto" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </section>
         </section>
 
 
-
     </main>
-    <footer class="container-fluid my-5">
+    <footer class="container-fluid">
         <section
             class="container d-flex flex-lg-row flex-column align-items-center justify-content-center text-lg-start text-center">
-            <div class="col-lg-3 col-12"><img src="./assets/images/logo.png" alt="Logo Luminar"></div>
-            <div class="col-lg-2 col-12 text-white">
+            <div class="col-lg-3 col-12 logo-footer"><img src="./assets/images/logo.png" alt="Logo Luminar"></div>
+            <div class="col-lg-2 col-12 text-white menu-footer">
                 <p>FAQS</p>
                 <p>SOBRE NÓS</p>
                 <p>FALE CONOSCO</p>
             </div>
             <div class="col-lg-5 col-12 text-white">
                 <div class="d-flex align-items-center mb-3 justify-content-lg-start justify-content-center">
-                    <img src="./assets/images/local.png" alt="Localização Imagem">
-                    <p class="ms-2 mb-0">Rua dos Aromas, 456, Saborville, Gourmetópolis, 12345-678</p>
+                    <img class="d-md-flex d-none" src="./assets/images/local.png" alt="Localização Imagem">
+                    <p class="p ms-2 mb-0">Rua dos Aromas, 456, Saborville, Gourmetópolis, 12345-678</p>
                 </div>
                 <div class="d-flex align-items-center mb-3 justify-content-lg-start justify-content-center">
-                    <img src="./assets/images/phone.png" alt="Telefone Imagem">
+                    <img class="d-lg-flex d-none" src="./assets/images/phone.png" alt="Telefone Imagem">
                     <div
-                        class="d-flex align-items-lg-start align-items-center justify-content-lg-start justify-content-center">
-                        <p class="me-5 mb-0 ms-2">(11) 1234-5678</p>
-                        <p class="mb-0">(22) 9876-5432</p>
+                        class="d-flex flex-lg-row flex-column align-items-lg-start align-items-center justify-content-lg-start justify-content-center">
+                        <p class="p me-lg-5 mb-0 ms-lg-2">(11) 1234-5678</p>
+                        <p class="p mb-0">(22) 9876-5432</p>
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
@@ -206,6 +274,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

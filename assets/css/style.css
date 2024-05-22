@@ -3,6 +3,7 @@ body {
 }
 
 .button-nav {
+    position: absolute;
     left: 0;
 }
 
@@ -14,20 +15,39 @@ body {
     width: 2rem;
 }
 
-
 .banner {
     background-image: url('../images/bg-banner.png');
     height: 60vw;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
+.banner::after,
+.banner-drinks::after,
+.form::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px 20px rgb(0, 0, 0);
+    z-index: 1;
+    pointer-events: none;
+}
 
 .banner-drinks {
     background-image: url('../images/bg-drink.png');
-    height: 60vw;
+    height: 80vw;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.drink-title {
+    padding: 5rem 0;
 }
 
 .line {
@@ -39,6 +59,45 @@ body {
 h4 {
     color: #EF5906;
     font-size: 3rem;
+    transition: all 0.5s;
+    position: relative;
+    padding: 20px;
+}
+
+h4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+}
+
+h4:hover::before {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+}
+
+h4::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: scale(1.2, 1.2);
+}
+
+h4:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
 }
 
 .maps h5 {
@@ -61,7 +120,113 @@ h4 {
     max-width: 200px;
 }
 
-.form-group input{
+.button-reserve {
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.button-reserve span {
+    transition: all 0.3s;
+}
+
+.button-reserve::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    transform: scale(0.1, 1);
+}
+
+.button-reserve:hover span {
+    letter-spacing: 2px;
+}
+
+.button-reserve:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.button-reserve::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button-reserve:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+
+.galery {
+    height: auto;
+    padding: 5rem 0;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.item {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.item img:hover {
+    scale: 1.1;
+    transition: 0.5s ease-out;
+}
+
+.form {
+    padding: 8rem 0;
+    background-image: url('../images/bg-form.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.banner-drinks::before,
+.form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px 20px rgb(0, 0, 0);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.form-group input {
     background-color: transparent;
     border: 1px solid #606060;
     color: #fff;
@@ -73,16 +238,166 @@ h4 {
 }
 
 .form-group input::placeholder {
-    color: #fff; 
+    color: #fff;
+}
+
+.localization {
+    padding: 7rem 0;
+    background-color: #0A0A0A;
+    position: relative;
+}
+
+.localization::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px 20px rgb(0, 0, 0);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 650px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: auto;
+    height: 150px;
+    margin: 0 30px;
+}
+
+button#nextBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
 @media screen and (max-width: 991px) {
-    .navbar-toggler-icon {
-        position: absolute;
-        right: 0;
+    header {
+        width: 100vw;
+        padding: 0 50px;
+    }
+
+    .navbar .container {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-brand img {
+        width: 150px;
+    }
+
+    .button-nav {
+        position: inherit;
     }
 
     .line {
         display: none;
+    }
+
+    .form {
+        width: 100%;
+        height: auto;
+        padding: 15rem 0;
+    }
+
+    .container-form input {
+        width: 80vw;
+        margin-bottom: 15px;
+    }
+
+    .img-form img {
+        width: 20rem;
+    }
+
+    .form {
+        padding: 2rem 0;
+        height: auto;
+    }
+
+    .localization {
+        padding: 5rem 0;
+    }
+
+    .localization::before,
+    .form::before,
+    .form::after {
+        content: '';
+        width: 0;
+        height: 0;
+    }
+
+    .logo-footer img {
+        width: 150px;
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .img-form img {
+        width: 10rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+
+    .navbar-brand img {
+        width: 80px;
+    }
+}
+
+
+@media screen and (max-width:470px) {
+
+    .localization {
+        width: 90vw;
+    }
+
+    .localization div .p {
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+
+    footer div .p {
+        font-size: 12px;
+    }
+
+    .menu-footer {
+        margin-bottom: 3rem;
+    }
+
+    iframe {
+        width: 80vw;
     }
 }
