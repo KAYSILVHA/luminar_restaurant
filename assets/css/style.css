@@ -46,6 +46,10 @@ body {
     position: relative;
 }
 
+.text-banner-drinks {
+    color: white;
+}
+
 .drink-title {
     padding: 5rem 0;
 }
@@ -98,6 +102,14 @@ h4::after {
 h4:hover::after {
     opacity: 1;
     transform: scale(1, 1);
+}
+
+.text-banner-menu {
+    color: white;
+}
+
+.text {
+    width: 50%;
 }
 
 .maps h5 {
@@ -322,6 +334,31 @@ button:disabled {
         display: none;
     }
 
+    .banner,
+    .banner-drinks {
+        height: auto;
+        padding: 5rem 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner section.container,
+    .banner-drinks section.container  {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-banner-menu img {
+        width: 20rem;
+        margin: 3rem 0;
+    }
+
+    .image-banner-drinks img {
+        width: 20rem;
+        margin: 3rem 0;
+    }
+
     .form {
         width: 100%;
         height: auto;
@@ -348,7 +385,10 @@ button:disabled {
 
     .localization::before,
     .form::before,
-    .form::after {
+    .form::after,
+    .banner::after,
+    .banner-drinks::after,
+    .banner-drinks::before {
         content: '';
         width: 0;
         height: 0;
