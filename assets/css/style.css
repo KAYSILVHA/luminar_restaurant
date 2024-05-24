@@ -300,36 +300,46 @@ h4:hover::after {
     pointer-events: none;
 }
 
-
 .carousel-container {
+    max-width: 65vw;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 50px 0;
+    margin: 5rem 0;
 }
 
 .carousel {
     overflow: hidden;
-    width: 650px;
+    width: 100%;
 }
 
-.carousel-images {
+.carousel-images,
+.carousel-images-2 {
     display: flex;
     transition: transform 0.5s ease;
 }
 
-.carousel img {
+.carousel-images img,
+.carousel-images-2 img {
+    margin: 0 2rem;
+    height: 100px;
     width: auto;
-    height: 150px;
-    margin: 0 30px;
 }
 
-button#nextBtn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+
+.carousel-images img:hover,
+.carousel-images-2 img:hover {
+    scale: 1.1;
+    transition: 0.5s ease-in-out;
+}
+
+#nextBtn,
+#prevBtn,
+#nextBtn2,
+#prevBtn2 {
+    font-size: 5rem;
+    color: #EF5906;
+    background: transparent;
+    border: 0;
 }
 
 button:disabled {
@@ -434,8 +444,11 @@ button:disabled {
         width: 80%;
         margin-bottom: 3rem;
     }
-}
 
+    .carousel-container {
+        max-width: 80vw;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .img-form img {
